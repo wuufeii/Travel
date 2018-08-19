@@ -1,21 +1,33 @@
 <template>
-  <div>
+  <div class="container">
     <home-header></home-header>
     <home-swiper></home-swiper>
-    dsfsdfsfsaf
+    <home-icons></home-icons>
+    <home-recommend></home-recommend>
+    <home-weekend></home-weekend>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
 import HomeSwiper from './components/Swiper'
+import HomeIcons from './components/Icons'
+import HomeRecommend from './components/Recommend'
+import HomeWeekend from './components/Weekend'
 export default{
   name: 'Home',
   components:{
     HomeHeader,
-    HomeSwiper
+    HomeSwiper,
+    HomeIcons,
+    HomeRecommend,
+    HomeWeekend
   }
 }
 </script>
 
-<style></style>
+<style>
+  .container{
+    background-color: #f5f5f5
+  }
+</style>
