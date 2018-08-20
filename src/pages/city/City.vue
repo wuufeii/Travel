@@ -1,9 +1,9 @@
 <template>
   <div>
     <city-header></city-header>
-    <city-search></city-search>
-    <city-list :hotCites="hotCities" :cities="cities"></city-list>
-    <city-alphabet :cities="cities"></city-alphabet>
+    <city-search :cities="cities"></city-search>
+    <city-list :hotCites="hotCities" :cities="cities" :letter="letter"></city-list>
+    <city-alphabet :cities="cities" @change="changeClick"></city-alphabet>
   </div>
 </template>
 
@@ -25,12 +25,16 @@
     data() {
       return{
          hotCities:[],
-         cities:{}
+         cities:{},
+         letter:''
       }
     },
     methods:{
       getCityInfo() {
         axios.get('/api/city.json').then(this.getCityInfoSucc)
+      },
+      changeClick(letter) {
+        this.letter = letter
       },
       getCityInfoSucc(res) {
         res = res.data
