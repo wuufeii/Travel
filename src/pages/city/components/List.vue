@@ -36,8 +36,6 @@
   </div>
 </template>
 
-
-
 <script>
   import Bscroll from 'better-scroll'
   import { mapState, mapMutations } from 'vuex'
