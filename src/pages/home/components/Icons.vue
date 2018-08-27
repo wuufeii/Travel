@@ -70,10 +70,10 @@
       padding-bottom:25%
       .icon-img
         position:absolute
-        top:0
-        right:0
-        left:0
-        bottom:.44rem
+        top: 0.2rem;
+        left: .2rem;
+        right: .2rem;
+        bottom: 0.55rem;
         .icon-img-content
           height:100%
           display:block
