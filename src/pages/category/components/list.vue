@@ -1,8 +1,7 @@
 <template>
-  <div class="weekend">
-    <div class="weekend-title">周末去哪</div>
-    <ul v-for="item of weekendList" :key="item.id">
-      <router-link to="/category" tag="li" class="item">
+  <div class="list">
+    <ul v-for="item of categoryList" :key="item.id">
+      <li class="item">
         <div class="item-img">
           <img class="item-img-content" :src="item.imgUrl">
         </div>
@@ -10,7 +9,11 @@
           <p class="item-info-title">{{item.title}}</p>
           <p class="item-info-desc">{{item.desc}}</p>
         </div>
-      </router-link>
+        <div class="item-price" v-if="item.price">
+          <span class="item-price-detail">￥{{item.price}}</span>
+          <span class="item-price-span">起</span>
+        </div>
+      </li>
     </ul>
   </div>
 </template>
@@ -19,30 +22,23 @@
 export default {
   name: 'HomeWeekend',
   props: {
-    weekendList:Array
+    categoryList:Array
   }
 }
 
 </script>
 
-
 <style lang="stylus" scoped>
   @import '~styles/mixins.styl'
-  .weekend
-    margin-top:.2rem
+  .list
     background-color:#fff
-    .weekend-title
-      margin-top:.2rem
-      line-height:.8rem
-      text-indent:.3rem
-      font-size:.32rem
     .item
-      padding-top:.1rem
+      position:relative
       .item-img
         overflow:hidden
         width:100%
         height:0
-        padding-bottom:37.4375%
+        padding-bottom:43.37288%
         .item-img-content
           width:100%
       .item-info
@@ -60,4 +56,16 @@ export default {
           line-height:.5rem
           color:#777
           ellipsis()
+      .item-price
+        position:absolute
+        bottom:.5rem
+        right:.2rem
+        .item-price-detail
+          font-size:.4rem
+          font-weight:bold
+          color:#ff8300
+          padding-right:.01rem
+        .item-price-span
+          color:#616161
+          font-size:.22rem
 </style>

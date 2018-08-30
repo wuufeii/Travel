@@ -1,15 +1,17 @@
 <template>
   <div>
-   <detail-banner
-    :sightName="sightName"
-    :bannerImg="bannerImg"
-    :bannerImgs="gallaryImgs"></detail-banner>
-   <detail-header></detail-header>
-   <div class="content">
-     <detail-list :list="list"></detail-list>
-   </div>
+    <detail-banner
+      :sightName="sightName"
+      :bannerImg="bannerImg"
+      :bannerImgs="bannerImgs">
+    </detail-banner>
+    <detail-header></detail-header>
+    <div class="content">
+      <detail-list :list="list"></detail-list>
+    </div>
   </div>
 </template>
+
 
 <script>
 import DetailBanner from './components/Banner'
@@ -27,7 +29,7 @@ export default{
     return{
       sightName:'',
       bannerImg:'',
-      gallaryImgs: [],
+      bannerImgs: [],
       list:[]
     }
   },
@@ -43,15 +45,17 @@ export default{
       res = res.data
       if(res.ret  && res.data){
         const data = res.data
-        console.log(data)
         this.sightName = data.sightName
         this.bannerImg = data.bannerImg
-        this.gallaryImgs = data.gallaryImgs
+        this.bannerImgs = data.gallaryImgs
         this.list = data.categoryList
       }
     }
   },
   mounted() {
+    this.getDetailiInfo()
+  },
+  activated() {
     this.getDetailiInfo()
   }
 }
@@ -60,5 +64,5 @@ export default{
 
 <style lang="stylus" scoped>
 .content
-  height:50rem
+  min-height:50rem
 </style>

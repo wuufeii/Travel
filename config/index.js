@@ -52,12 +52,20 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../travel/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../travel'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
+        proxyTable: {
+      '/api': {
+        target: 'http://www.wuufeii.com',
+        pathRewrite: {
+            '^/api':'/static/mock'
+        }
+      }
+    },
 
     /**
      * Source Maps

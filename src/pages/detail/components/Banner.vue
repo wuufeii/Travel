@@ -10,7 +10,7 @@
     </div>
   </div>
   <fade-animation>
-    <common-gallary :imgs="imgs" v-show="showGallary" @close="handleGallayClose"></common-gallary>
+    <common-gallary :imgs="this.bannerImgs" v-show="showGallary" @close="handleGallayClose"></common-gallary>
   </fade-animation>
   </div>
   
@@ -28,7 +28,6 @@ import FadeAnimation from 'common/fade/FadeAnimation'
     },
     data() {
       return{
-        imgs:['http://img1.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_600x330_5d562f69.jpg','http://img1.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_600x330_5d562f69.jpg'],
         showGallary:false
       }
     },
