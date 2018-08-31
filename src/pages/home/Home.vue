@@ -40,7 +40,6 @@ export default{
   methods: {
     getHomeInfo () {
       axios.get('/api/index.json?city=' + this.city).then(this.getHomeInfoSucc)
-/*        axios.get('/dist/static/mock/index.json?city=' + this.city).then(this.getHomeInfoSucc)*/
     },
     getHomeInfoSucc (res) {
       res = res.data
@@ -66,8 +65,7 @@ export default{
 }
 </script>
 
-<style>
-  .container{
+<style lang="stylus" scoped>
+  .container
     background-color: #f5f5f5
-  }
 </style>

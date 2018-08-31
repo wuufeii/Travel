@@ -4,11 +4,11 @@ import Home from '@/pages/home/Home'
 import City from '@/pages/city/City'
 import Detail from '@/pages/detail/Detail'
 import Category from '@/pages/category/Category'
+import List from '@/pages/list/list'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [{
       path: '/',
       name: 'Home',
@@ -27,6 +27,11 @@ export default new Router({
       path:'/category',
       name:'Category',
       component:Category
+    },
+    {
+      path:'/List',
+      name:'List',
+      component:List
     }
   ],
   scrollBehavior (to, from, savedPosition) {

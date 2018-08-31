@@ -1,10 +1,9 @@
 <template>
-  <div>
+  <div class="container">
     <category-header></category-header>
     <category-list :categoryList="categoryList"></category-list>
   </div>
 </template>
-
 
 <script>
 import CategoryHeader from './components/Header'
@@ -23,7 +22,7 @@ export default{
   },
    methods: {
     getCategoryInfo () {
-      axios.get('/api/index.json').then(this.getCategoryInfoSucc)
+      axios.get('/api/detail.json').then(this.getCategoryInfoSucc)
     },
     getCategoryInfoSucc (res) {
       res = res.data
@@ -41,4 +40,6 @@ export default{
 </script>
 
 <style lang="stylus" scoped>
+  .container
+    background-color:#f5f5f5
 </style>
