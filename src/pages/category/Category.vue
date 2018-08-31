@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <category-header></category-header>
-    <category-list :categoryList="categoryList"></category-list>
+    <category-list :cityAreaList="cityAreaList"></category-list>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default{
   },
    data() {
     return{
-      categoryList:[]
+      cityAreaList:[]
     }
   },
    methods: {
@@ -28,7 +28,7 @@ export default{
       res = res.data
       if(res.ret && res.data){
         const data = res.data
-        this.categoryList = data.categoryList
+        this.cityAreaList = data.cityAreaList
       }
     }
   },

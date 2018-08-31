@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="item-box">
     <div class="item" v-for="item of list" :key="item.id">
       <div class="item-container">
         <div class="item-img">
@@ -55,9 +55,10 @@
 
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
+.item-box
+  padding-top:$headerHeight
   .item
     height:0
-    padding-top:$headerHeight
     padding-bottom:4.32rem
     margin-bottom:.2rem
     background-color:#fff
@@ -121,7 +122,7 @@
             white-space: nowrap
             padding-top:.12rem
         .item-content-flag
-          margin-top:.12rem
+          margin-top:.1rem
           .flag-detail
             margin-right:.08rem
             color:#00afc7

@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <ul v-for="item of categoryList" :key="item.id">
+    <ul v-for="item of cityAreaList" :key="item.id">
       <li class="item">
         <div class="item-img">
           <img class="item-img-content" :src="item.imgUrl">
@@ -22,7 +22,7 @@
 export default {
   name: 'HomeWeekend',
   props: {
-    categoryList:Array
+    cityAreaList:Array
   }
 }
 
