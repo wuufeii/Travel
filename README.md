@@ -11,7 +11,7 @@
 ## 项目的效果图
 
 ``` bash
-这里是[传送门](wuufeii.github.io/travel/index.html)来查看项目效果吧
+这里是[传送门](https://wuufeii.github.io/travel/index.html)来查看项目效果吧
 ```
 
 ## 项目如何使用
