@@ -10,9 +10,8 @@
 
 ## 项目的效果图
 
-``` bash
-[这里是传送门来查看项目效果吧](https://wuufeii.github.io/travel/index.html)
-```
+想要看看项目的效果是怎样的？来吧————————[传送门](https://wuufeii.github.io/travel/index.html)
+
 
 ## 项目如何使用
 
