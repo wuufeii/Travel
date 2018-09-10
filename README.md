@@ -10,7 +10,7 @@
 
 ## 项目的效果图
 
-想要看看项目的效果是怎样的？来吧——[传送门](https://wuufeii.github.io/demo/travel/index.html) <br />
+想要看看项目的效果是怎样的？来吧——[传送门](https://wuufeii.github.io/travel/index.html) <br />
 *注：请使用手机浏览器查看哦*
 >>>> *如果使用pc浏览器，请调成手机模拟查看*
 
