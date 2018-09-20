@@ -16,18 +16,18 @@
 
 ## 项目截图
 
->     效果图1
+     效果图1
 <div align="center">
   <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/1.jpg"/>
 </div>
 
->     效果图2
+     效果图2
 
 <div align=center>
   <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/2.jpg"/>
 </div>
 
->     效果图3
+     效果图3
 
 <div align=center>
   <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/3.jpg"/>
@@ -39,7 +39,7 @@
   <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/4.jpg"/>
 </div>
 
->     效果图5
+     效果图5
 
 <div align=center>
   <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/5.jpg"/>
