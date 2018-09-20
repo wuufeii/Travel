@@ -33,7 +33,7 @@
   <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/3.jpg"/>
 </div>
 
->     效果图4
+     效果图4
 
 <div align=center>
   <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/4.jpg"/>
