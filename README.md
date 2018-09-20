@@ -14,6 +14,37 @@
 *注：请使用手机浏览器查看哦*
 >>>> *如果使用pc浏览器，请调成手机模拟查看*
 
+## 项目截图
+
+>     首页效果
+<div align="center">
+  <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/1.jpg"/>
+</div>
+
+>     赚钱页效果
+
+<div align=center>
+  <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/2.jpg"/>
+</div>
+
+>  借钱页面效果
+
+<div align=center>
+  <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/3.jpg"/>
+</div>
+
+>  省钱页面效果
+
+<div align=center>
+  <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/4.jpg"/>
+</div>
+
+>  个人中心页面效果
+
+<div align=center>
+  <img width="300" src="https://github.com/wuufeii/html-css/blob/master/assets/img-travel/5.jpg"/>
+</div>
+
 
 ## 项目如何使用
 
